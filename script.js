@@ -47,7 +47,7 @@ for(const key of plane){
             flat[`${key}`] = player
             const el = document.createElement("img");
             box.appendChild(el)
-            el.src = player ? '/Assets/close.png' : '/Assets/o.png'
+            el.src = player ? '/Assets/close.PNG' : '/Assets/o.PNG'
             el.classList.add('img')
             round += 1;
         }
