@@ -23,6 +23,7 @@ function restart(){
     flat = {}
     win = false
     round = 0
+    player = 0
     console.log(flat)
     for(const key of plane){
         const box = document.querySelector(`.box_${key}`)
@@ -34,7 +35,7 @@ const hidden = (player, draw = false) => {
     page.classList.toggle('hidden')
     overlay.classList.toggle('hidden')
     if(!draw){
-        p.textContent = !player ? 'Congratulations! Player One Win!' : 'Congratulations! Player Two Win!'
+        p.textContent = !player ? 'Congratulations! Player O Win!' : 'Congratulations! Player X Win!'
     }else{
         p.textContent = 'Draw!'
     }
