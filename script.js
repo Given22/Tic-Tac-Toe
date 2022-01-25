@@ -64,7 +64,7 @@ function checkWin(player, f, r){
         ['seven','eight','nine'],
         ['one','four','seven'],
         ['two','five','eight'],
-        ['three','eight','nine'],
+        ['three','six','nine'],
         ['one','five','nine'],
         ['three','five','seven']
     ]
