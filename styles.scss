@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background: linear-gradient(to top left, #58aacf 0%, #e2eaf0 100%) no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: rgb(70, 81, 105);
+        font-size: 5vh;
+    }
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    height: 50vmin;
+    width: 50vmin;
+}
+
+.box{
+    border-radius: 10%;
+    background-color: rgb(170, 214, 235);
+    box-shadow: inset 1px 1px 3px rgb(250, 250, 250), 1px 2px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plane{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.again{
+    position: relative;
+    top: 10vh;
+    padding: 2vh 4vh;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(170, 214, 235);
+    box-shadow: 1px 2px 3px black;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+.page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.close-page {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
