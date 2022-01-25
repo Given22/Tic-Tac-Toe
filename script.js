@@ -51,9 +51,9 @@ for(const key of plane){
             el.src = player ? './Assets/close.PNG' : './Assets/o.PNG'
             el.classList.add('img')
             round += 1;
+            changePlayer()
         }
         checkWin(player, flat, round)
-        changePlayer()
     })
 }
 
