@@ -31,9 +31,14 @@ function restart(){
     }
 }
 
+const hiddenAdd = () => {
+    page.classList.add('hidden')
+    overlay.classList.add('hidden')
+}
+
 const hidden = (player, draw = false) => {
-    page.classList.toggle('hidden')
-    overlay.classList.toggle('hidden')
+    page.classList.remove('hidden')
+    overlay.classList.remove('hidden')
     if(!draw){
         p.textContent = !player ? 'Congratulations! Player O Win!' : 'Congratulations! Player X Win!'
     }else{
@@ -75,6 +80,7 @@ function checkWin(player, f, r){
     for(const i of winningConditions){
         if(i[0] in f && i[1] in f && i[2] in f){
             if(f?.[`${i[0]}`] === f?.[`${i[1]}`] && f?.[`${i[1]}`] === f?.[`${i[2]}`]){
+                console.log('win')
                 win = true
                 hidden(player)
             }
@@ -87,18 +93,18 @@ again.addEventListener('click', restart)
 
 overlay.addEventListener('click', ()=>{
     restart()
-    hidden()
+    hiddenAdd()
 })
 document.querySelector('.close-page').addEventListener('click', ()=>{
     restart()
-    hidden()
+    hiddenAdd()
 })
 
 
 document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && !page.classList.contains('hidden')){
         restart()
-        hidden()
+        hiddenAdd()
     }
 })
 
