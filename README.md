@@ -14,7 +14,7 @@
   * Html
   * Scss
   
-## Site
+## Live
 
   Site is deploy on github pages. 
   https://given22.github.io/Tic-Tac-Toe/
