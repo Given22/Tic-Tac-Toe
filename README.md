@@ -6,7 +6,7 @@
 
 ## General info
   
-  Simple Tic Tac Toe game. With minimalist interface.
+  A site for playing Tic-Tac-Toe with another person on the same computer. It was created to practice the basic skills of pure javascript, HTML, and SCSS.
   
 ## Technologies
   
@@ -16,7 +16,6 @@
   
 ## Live
 
-  Site is deploy on github pages. 
   https://given22.github.io/Tic-Tac-Toe/
   
 ## Appearance
