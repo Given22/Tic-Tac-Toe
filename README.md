@@ -16,7 +16,7 @@
   
 ## Live
 
-  https://given22.github.io/Tic-Tac-Toe/
+  https://tic-tac-toe-damian-s.netlify.app
   
 ## Appearance
 
