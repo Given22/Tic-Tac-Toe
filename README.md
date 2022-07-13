@@ -20,14 +20,12 @@
   
 ## Appearance
 
-  ![look 1](/Assets/look_1.PNG)
+  ![look 1](/screens/look_1.PNG)
   
 ## Features
 
   * Again Button - reset a surface, u can play again!
-  * Responsive for mobile and computer
   
 ## To do:
 
   * Include A.I. to enemy. Now you can play only with player next to you.
-  * Online gaming.

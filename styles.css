@@ -45,7 +45,9 @@ header h1 {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 8px;
   grid-auto-flow: row;
-      grid-template-areas: ". . ." ". . ." ". . .";
+      grid-template-areas: ". . ."
+ ". . ."
+ ". . .";
   height: 50vmin;
   width: 50vmin;
 }
@@ -142,3 +144,16 @@ img {
   background: none;
 }
 /*# sourceMappingURL=styles.css.map */
+
+.again{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #465169;
+  font-size: 1.3rem;
+}
+
+.iconify{
+  width: 4rem;
+  height: 4rem;
+  max-width: 40%;
+  max-height: 40%;
+}
